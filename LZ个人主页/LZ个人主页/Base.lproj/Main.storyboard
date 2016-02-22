@@ -37,11 +37,15 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mGT-Y6-Rx2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="5tl-tE-cHA" id="iIG-AK-Ova"/>
+                                    <outlet property="delegate" destination="5tl-tE-cHA" id="GD1-ys-A3i"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBQ-wd-cqE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="4Fw-Ic-hrB">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="4Fw-Ic-hrB">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="火影" translatesAutoresizingMaskIntoConstraints="NO" id="J4d-jt-PEl">
@@ -88,10 +92,14 @@
                     <navigationItem key="navigationItem" id="GwV-Ei-Oe3"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bgImageViewHLc" destination="H72-Ok-7q3" id="7Va-cz-0Zb"/>
+                        <outlet property="tableView" destination="mGT-Y6-Rx2" id="H97-tU-CsS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vek-Dh-u7Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1051.5" y="289.5"/>
+            <point key="canvasLocation" x="-1211.5" y="289.5"/>
         </scene>
     </scenes>
     <resources>
